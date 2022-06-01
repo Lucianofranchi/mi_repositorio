@@ -1,0 +1,168 @@
+head{
+    box-sizing: border-box;
+    background-color: black;
+    display: flex;
+}
+header{
+    box-sizing: border-box;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    flex-flow: column;
+}
+body{
+    display: flex;
+    height: 600px;
+    flex-direction: column;
+    padding: 1em;
+    background-color: black;
+}
+
+    
+.colorblanco{
+    color: white;
+}
+
+/*título*/
+h1{
+    padding: 0,1rem;
+    color: red;
+    font-size: 45px;
+    font-style: italic;
+    text-align: center;
+}
+
+
+/*menú de navegación*/
+.navmenu{
+    text-align: center;
+    padding: 2rem;
+}
+.menu{
+    font-size: 19px;
+    text-align: center;
+    margin-bottom: 20px;
+    
+}
+.menu li{
+    list-style-position: inside;
+    display: inline-block;    
+}
+#comunidad{
+    color: green;
+}
+
+/*etiquetas para la imagen del body*/
+.imagen{
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+    width: max-content;
+    max-width: 1000px;
+    margin-bottom: 20px;
+    
+}
+.imagen img{
+    width: 310px;
+    float: left;
+    margin-right: 20px;
+    margin-top: 20px;
+    margin-left: 300px;
+    margin-bottom: 20px;
+}
+.imagen p{
+    color: white;
+    text-align: center;
+}
+
+/*footer*/
+footer{
+    flex:1;
+    padding: 1rem;
+    margin:1px;
+}
+h6{
+    height: 50px;
+    text-align: end;
+    color: white;
+}
+
+
+/*centrar*/
+.centro{
+    text-align: center;
+    margin-top: 100px;    
+}
+.medio{
+    text-align: center;
+    align-items: center;
+    table-layout: auto;
+}
+
+/*contenido del footer*/
+.contendor{
+    overflow: hidden;
+    padding: 10px;
+   }
+.iz{
+    text-align: left;
+    margin-left: 130px;
+}
+.de{
+    text-align: right;
+    margin-right: 130px;
+}
+
+/*para que los textos del footer estén uno de cada lado*/
+.izquierda{
+    float: left;
+    padding: 10px;
+    width: 300px;
+    margin: 40px;
+    margin-left: 150px;
+}
+.derecha{
+    float: right;
+    padding: 10px;
+    width: 300px;
+    margin: 40px;
+    margin-right: 150px;
+}
+
+/*para el color de fondo de la tabla*/
+.trfondo{
+    color: white;
+    background-color: red;
+}
+/*para las fotos de la pag 4*/
+.gridcontainer{
+    display: grid;
+    background-color: rgb(0, 0, 0);
+    grid-template-columns: auto auto;
+    justify-content: space-evenly;
+    
+
+}
+.gridfotos{
+    display: grid;
+    background-color: red;
+    border: 5px solid rgb(255, 255, 255);
+    align-content: center;
+    justify-content: center;
+
+}
+
+.flexfotos{
+    display: flex;
+    width: 500px;
+    height: 290px;
+    padding: 15px;
+}
+
+/*contenido y fondo de la vida personal*/
+.gridtexto{
+    flex: content;
+    justify-content: center;
+    display: grid;
+    background-color: red;
+}
