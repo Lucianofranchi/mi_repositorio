@@ -1,11 +1,11 @@
 head{
     box-sizing: border-box;
-    background-color: black;
     display: flex;
 }
 header{
     box-sizing: border-box;
-    background-color: black;
+    background: black;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ff0000",endColorstr="#000000",GradientType=1);
     display: flex;
     justify-content: center;
     flex-flow: column;
@@ -15,6 +15,7 @@ body{
     height: 600px;
     flex-direction: column;
     padding: 1em;
+    box-sizing: border-box;
     background-color: black;
 }
 
@@ -46,7 +47,13 @@ h1{
 }
 .menu li{
     list-style-position: inside;
-    display: inline-block;    
+    display: inline-block; 
+    background-color: rgb(0, 0, 0);
+    transition: all 1ms;   
+}
+.menu li:hover{
+    background-color: red;
+
 }
 #comunidad{
     color: green;
@@ -149,9 +156,8 @@ h6{
     border: 5px solid rgb(255, 255, 255);
     align-content: center;
     justify-content: center;
-
+  
 }
-
 .flexfotos{
     display: flex;
     width: 500px;
