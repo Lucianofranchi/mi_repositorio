@@ -21,7 +21,7 @@ body{
 
     
 .colorblanco{
-    color: white;
+    color: rgb(255, 241, 241);
 }
 
 /*título*/
@@ -35,25 +35,11 @@ h1{
 
 
 /*menú de navegación*/
-.navmenu{
-    text-align: center;
-    padding: 2rem;
+.logo{
+    height: 40px;
 }
-.menu{
-    font-size: 19px;
-    text-align: center;
-    margin-bottom: 20px;
-    
-}
-.menu li{
-    list-style-position: inside;
-    display: inline-block; 
-    background-color: rgb(0, 0, 0);
-    transition: all 1ms;   
-}
-.menu li:hover{
-    background-color: red;
-
+.navbar{
+    align-self: center;
 }
 #comunidad{
     color: green;
@@ -98,19 +84,33 @@ h6{
 /*centrar*/
 .centro{
     text-align: center;
-    margin-top: 100px;    
+    margin-top: 100px; 
+    table-layout: center;   
 }
 .medio{
     text-align: center;
     align-items: center;
-    table-layout: auto;
+    table-layout: center;
 }
 
 /*contenido del footer*/
-.contendor{
-    overflow: hidden;
-    padding: 10px;
-   }
+.contenedor{
+    background-color: rgb(255, 183, 0);
+    height: 300px;
+    display: grid;
+    grid-template-rows: 2fr 1fr;
+    grid-template-columns: 50% 50%;
+   
+}
+.contenedorhijo1{
+
+}
+.contenedorhijo2{
+
+}
+.contenedorhijo3{
+    display: flex;
+}
 .iz{
     text-align: left;
     margin-left: 130px;
@@ -122,18 +122,10 @@ h6{
 
 /*para que los textos del footer estén uno de cada lado*/
 .izquierda{
-    float: left;
-    padding: 10px;
-    width: 300px;
-    margin: 40px;
-    margin-left: 150px;
+    transform: translate(100px,20px);
 }
 .derecha{
-    float: right;
-    padding: 10px;
-    width: 300px;
-    margin: 40px;
-    margin-right: 150px;
+    transform: translate(10px,20px);
 }
 
 /*para el color de fondo de la tabla*/
@@ -142,22 +134,23 @@ h6{
     background-color: red;
 }
 /*para las fotos de la pag 4*/
-.gridcontainer{
-    display: grid;
-    background-color: rgb(0, 0, 0);
-    grid-template-columns: auto auto;
-    justify-content: space-evenly;
+.padre{
+ border: 4px solid white;
+ display: grid;
+ background-color: red;
+ gap: 10px;
+ grid-template-columns: repeat(2, 1fr);
+ grid-template-rows: 400px 400px;
+ padding: 5px;
+}
+.hijo{
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+    object-position: center;
     
+}
 
-}
-.gridfotos{
-    display: grid;
-    background-color: red;
-    border: 5px solid rgb(255, 255, 255);
-    align-content: center;
-    justify-content: center;
-  
-}
 .flexfotos{
     display: flex;
     width: 500px;
