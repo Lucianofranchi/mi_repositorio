@@ -1,0 +1,25 @@
+{
+  "name": "raiz",
+  "version": "1.0.0",
+  "description": "paquete de sass",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "node sass --include-path scss sass/main.scss Estilos.css/main.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\""    
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Lucianofranchi/mi_repositorio.git"
+  },
+  "author": "Luciano Franchi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Lucianofranchi/mi_repositorio/issues"
+  },
+  "homepage": "https://github.com/Lucianofranchi/mi_repositorio#readme",
+  "devDependencies": {
+    "node-sass": "^7.0.1",
+    "nodemon": "^2.0.16"
+  }
+}
