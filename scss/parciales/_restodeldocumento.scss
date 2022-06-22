@@ -1,0 +1,28 @@
+.colorblanco{
+    color: $MainColor;
+}
+/*centrar*/
+.centro{
+    text-align: center;
+    margin-top: 100px; 
+    table-layout: center;   
+}
+.medio{
+    text-align: center;
+    align-items: center;
+    table-layout: center;
+}
+
+/*para el color de fondo de la tabla*/
+.trfondo{
+    color: $MainColor;
+    background-color: $terColor;
+}
+
+/*contenido y fondo de la vida personal*/
+.gridtexto{
+    flex: content;
+    justify-content: center;
+    display: grid;
+    background-color: $terColor ;
+}
