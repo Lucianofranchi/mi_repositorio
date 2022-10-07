@@ -1,14 +1,13 @@
 import './App.css';
+import "./Styles.css"
 
-import Avatar from './components/Avatar';
-import NavBar from './components/NavBar';
+import MovieFinder from './components/MovieFinder';
 
 function App() {
   return (
-    <div className="App">
-      <Avatar src="https://via.placeholder.com/150x150"/>
-    </div>
+    <NavBar src="./components/MovieFinder"></NavBar>
   );
 }
 
 export default App;
+
